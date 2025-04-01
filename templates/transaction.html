@@ -1,1 +1,11 @@
-<h1>hello world</h1>
+{% extends 'base.html'%}
+
+{% block content %}
+    <div class="row">
+        {% for transaction in transactions %}
+        <h2>{{transaction.title}}</h2>
+
+    {% endfor %}
+
+    </div>
+{% endblock content%}
