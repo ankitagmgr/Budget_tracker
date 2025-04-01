@@ -1,5 +1,5 @@
 from django.db import models
-
+#use for database
 class Transaction(models.Model):
     title=models.CharField(max_length=100)
     amount=models.DecimalField(max_digits=10,decimal_places=2)
