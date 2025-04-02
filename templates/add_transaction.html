@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <form action="" method="post" class="form-control">
+    {% csrf_token %}
+    <input type="text" placeholder="enter...." name="title" class="form-control" value="">
+    <button type="submit">Save</button>
+</form>
+{% endblock content %}
